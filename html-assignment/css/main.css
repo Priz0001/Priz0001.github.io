@@ -1,0 +1,34 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color:#9883E5;
+}
+
+.site-title {
+    color:#2b196d;
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+.my-list {
+    list-style-type: square;
+}
+
+li:nth-child(odd) {
+    background: #9fbeeb;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    background-color: #FCD3DE;
+    border:2px solid #2E382E;
+}
+
+a:hover {
+    background-color:#50C9CE;
+}
