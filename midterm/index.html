@@ -4,51 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>priz0001 midterm</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header id="home">
-        <h1>LOBA</h1>
-        <img src="images/photo-header.png" alt="Loba going for a walk">
-        <nav>
-            <a href="#home">HOME</a>
-            <a href="#story">STORY</a>
-            <a href="#contact">CONTACT</a>
-        </nav>
-    </header>
-    <div>
-        <article id="story">
-            <h2>Loba's life</h2>
-            <img src="images/photo-story.png" alt="Loba smiling">
-            <p>Loba was a stray dog that roamed around the university where my mother worked and I studied. After noticing she was in heat, we brought her home to take her to a veterinary clinic for spaying, so she wouldn't have puppies on the street. During her recovery from surgery, she stayed at home, and we realized she was a very gentle and playful dog. We tried to find an owner for her, but because she was a large dog, we couldn't find anyone willing to take her. In the end, we couldn't bring ourselves to return her to the street, so we ended up adopting her. This happened in 2014, and she has been with the family for 10 years now. She has always gotten along well with the whole family and other pets in the house.</p>
-        </article>
-    </div>
-    <div>
-        <h2>Facts about Loba</h2>
-        <ul>
-            <li>Her name "Loba" means she-wolf in Portuguese, and she was called that because her barks sometimes sound like howling.</li>
-            <li>When she first arrived home, she would eat anything offered to her, including fruits and vegetables. Today, she is a bit more selective.</li>
-            <li>She loves interacting with the cats in the house, but the cats hate this interaction and sometimes give her swats.</li>
-            <li>She still goes back to the university where we found her, but now just for walks on a leash.</li>
-        </ul>
-    </div>
-    <div id="contact">
-        <h2>Contact to learn more</h2>
-        <form action="index.html" method="get">
-            <div>
-                <label for="name">Your name</label>
-                <input id="name" type="text" name="name">
+    <div class="content">
+        <header id="home">
+            <h1>LOBA</h1>
+            <div class="image-container">
+                <img src="images/photo-header.png" alt="Loba going for a walk">
             </div>
-            <div>
-                <label for="email">Your email</label>
-                <input id="email" type="email" name="email">
-            </div>
-            <div>
-                <label for="message">Your message</label>
-                <textarea id="message"></textarea>
-            </div>
-            <div>
-                <h3>Would you like to pet her?</h3>
+            <nav class="nav-container">
+                <a href="#home">HOME</a>
+                <a href="#story">STORY</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+        <div>
+            <article id="story">
+                <h2>Loba's life</h2>
+                <div class="clearfix">
+                    <img class = "image-container2" src="images/photo-smiling.jpeg" alt="Loba smiling">
+                    <p>Loba was a stray dog that roamed around the university where my mother worked and I studied. After noticing she was in heat, we brought her home to take her to a veterinary clinic for spaying, so she wouldn't have puppies on the street. During her recovery from surgery, she stayed at home, and we realized she was a very gentle and playful dog. We tried to find an owner for her, but because she was a large dog, we couldn't find anyone willing to take her. In the end, we couldn't bring ourselves to return her to the street, so we ended up adopting her. This happened in 2014, and she has been with the family for 10 years now. She has always gotten along well with the whole family and other pets in the house.</p>
+                </div>
+            </article>
+        </div>
+        <div>
+            <h2>Facts about Loba</h2>
+            <ul>
+                <li>Her name "Loba" means she-wolf in Portuguese, and she was called that because her barks sometimes sound like howling.</li>
+                <li>When she first arrived home, she would eat anything offered to her, including fruits and vegetables. Today, she is a bit more selective.</li>
+                <li>She loves interacting with the cats in the house, but the cats hate this interaction and sometimes give her swats.</li>
+                <li>She still goes back to the university where we found her, but now just for walks on a leash.</li>
+            </ul>
+        </div>
+        <div id="contact">
+            <h2>Contact to learn more</h2>
+            <form class="form-container" action="index.html" method="get">
+                <div>
+                    <label for="name">Your name</label>
+                    <input id="name" type="text" name="name">
+                </div>
+                <div>
+                    <label for="email">Your email</label>
+                    <input id="email" type="email" name="email">
+                </div>
+                <div>
+                    <label for="message">Your message</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <div>
+                    <h3>Would you like to pet her?</h3>
                     <label for="yes">Yes</label>
                     <input id="yes" type="radio" name="petthedog" value="yes">
                     <label for="no">No</label>
@@ -56,15 +62,16 @@
                     <label for="maybe">Maybe</label>
                     <input id="maybe" type="radio" name="petthedog" value="maybe">
                     <button type="submit">Send</button>
-            </div>
-        </form>
+                </div>
+            </form>
+        </div>
+        <footer>&copy; Loba</footer>
     </div>
-    <footer>&copy; Loba</footer>
-
-
-    <!-- add a wrapper to center the content -->
-
-    <!-- header with image and a heading over lapping -->
+        
+        
+        <!-- add a wrapper to center the content -->
+        
+        <!-- header with image and a heading over lapping -->
 
     <!-- linkar cada link do menu (home story e contact) com cada tópico da página -->
 
