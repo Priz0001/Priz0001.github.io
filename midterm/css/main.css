@@ -11,13 +11,24 @@ body {
 
 .content {
 
-    width: 70%;
+    width: 60%;
     margin: auto;
     background-color:#BEC5E4;
 }
 
+h1 {
+    position: flex;
+    z-index:1;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+    background-color: hsla(229, 41%, 82%, 0.5);
+    width:60%;
+}
+
 .image-container {
     margin: auto;
+    z-index:2;
     width: 760;
     height: 490;
 }
@@ -30,7 +41,7 @@ body {
 .image-container2 {
     width: 300px;
     height: 300px;
-    margin: 0 15px 15px 10px;
+    margin: 0 15px 15px 0;
     float:left;
 }
 
@@ -47,20 +58,38 @@ body {
 
 .nav-container {
     font-size: 1.2rem;
-    display: inline-block;
-    width: auto;
-    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.content h2 {
+a {
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+}
+
+.separator {
+    border-left: black solid 1px;
+    height: 36px;
+    width: 1px;
+    /* uses a border-left property to add vertical lines between the anchor tags/links */
+}
+
+h2 {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 10px;
 }
 
-.content ul {
+article {
+    margin: 0 10px 10px 10px;
+}
+
+ul {
     list-style-type: disc;
-    margin: 10px;
+    margin: 20px;
+    padding-left: 10px;
 }
 
 .form-container {
@@ -69,6 +98,9 @@ body {
     padding: 10px
 }
 
-.content footer {
+
+
+footer {
+    /* text-align:right; */
     margin: 10px;
 }
