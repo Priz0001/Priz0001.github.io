@@ -29,6 +29,7 @@ body {
     width:100%;
     text-align: center;
     /* use absolute positioning on h1 so that it considers the position of the image-container class to vertically center it over the image, by adding top 50% and text-align: center. The width 100% extends the background-color from left to right across the entire image-container class */
+    /* add a background-color to heading 1 so it has a better contrast with the image */
 }
 
 .image-container img {
