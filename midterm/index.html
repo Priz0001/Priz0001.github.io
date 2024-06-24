@@ -9,21 +9,21 @@
 </head>
 <body>
     <div class="content">
-        <header id="home">
-            <div class="wrapper">
-                <div class="image-container">
-                    <h1>LOBA</h1>
-                    <img src="images/photo-header.png" alt="Loba going for a walk">
-                </div>
-            </div>
+    <!-- add a wrapper to center the content using CSS -->
+        <header id="home">            
+            <div class="image-container">
+                <img src="images/photo-header.png" alt="Loba going for a walk">
+                <h1>LOBA</h1>
+                <!-- add img and h1 tags inside a div tag so I can apply CSS properties specifically to this content -->
+            </div>            
             <nav class="nav-container">
                 <a href="#home">HOME</a>
                 <div class="separator"></div>
                 <a href="#story">STORY</a>
                 <div class="separator"></div>
                 <a href="#contact">CONTACT</a>
-                <!-- adds anchor tags to make links inside the page by using id with same name as each part of the page linked -->
-                <!-- adds div tag between anchor tags with class selector so in css it is possible to add vertical bars -->
+                <!-- add anchor tags to create internal links within the page, using IDs with the same name as each section of the page being linked -->
+                <!-- add a div tag between the anchor tags with a class selector so that it is possible to add vertical bars in CSS -->
             </nav>
         </header>
         <div>
@@ -32,6 +32,7 @@
                 <div class="clearfix">
                     <img class = "image-container2" src="images/photo-smiling.jpeg" alt="Loba smiling">
                     <p>Loba was a stray dog that roamed around the university where my mother worked and I studied. After noticing she was in heat, we brought her home to take her to a veterinary clinic for spaying, so she wouldn't have puppies on the street. During her recovery from surgery, she stayed at home, and we realized she was a very gentle and playful dog. We tried to find an owner for her, but because she was a large dog, we couldn't find anyone willing to take her. In the end, we couldn't bring ourselves to return her to the street, so we ended up adopting her. This happened in 2014, and she has been with the family for 10 years now. She has always gotten along well with the whole family and other pets in the house.</p>
+                    <!-- add a clearfix class inside the div tag containing the img and p tags so that the floating image in CSS doesn't interfere with any other content -->
                 </div>
             </article>
         </div>
@@ -47,13 +48,15 @@
         <div id="contact">
             <h2>Contact to learn more</h2>
             <form class="form-container" action="index.html" method="get">
+                <!-- add a form to the page for users to input their name, email, message, and answer a question related to the subject. -->
+                 <!-- use 'method get' attribute because none of the information in the form is sensitive -->
                 <div>
                     <label for="name">Your name</label>
-                    <input id="name" type="text" name="name">
+                    <input class="breakline" id="name" type="text" name="name">
                 </div>
                 <div>
                     <label for="email">Your email</label>
-                    <input id="email" type="email" name="email">
+                    <input class="breakline" id="email" type="email" name="email">
                 </div>
                 <div>
                     <label for="message">Your message</label>
@@ -67,19 +70,12 @@
                     <input id="no" type="radio" name="petthedog" value="no">
                     <label for="maybe">Maybe</label>
                     <input id="maybe" type="radio" name="petthedog" value="maybe">
-                    <button type="submit">Send</button>
+                    <!-- use 'input' of 'type radio' because in this form the answers are preselected and it is only possible to select one of them -->
+                    <button type="submit">SEND</button>
                 </div>
             </form>
         </div>
         <footer>&copy; Loba</footer>
     </div>
-        
-        
-        <!-- add a wrapper to center the content -->
-        
-        <!-- header with image and a heading over lapping -->
-
-    <!-- linkar cada link do menu (home story e contact) com cada tópico da página -->
-
 </body>
 </html>
