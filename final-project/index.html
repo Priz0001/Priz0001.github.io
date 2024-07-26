@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,88 +10,196 @@
 
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <div class="content">
     <!-- add a wrapper to center the content by using a class to the div tag that contains all the content -->
-        <header>
-            <nav>
-                <img src="images/logo.png" alt="stars logo">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#services">Services</a>
-                <a href="#team">Team</a>
-                <a href="#contact">Contact</a>
-                <!-- add anchor tags to creat internal links by using IDs with the same name as each section -->
-            </nav>
-            <form class="form-container" action="index.html" method="get">
-                <input type="text" name="search"  placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <header>
+        <nav class="nav-menu">
+            <img src="images/logo.png" alt="stars logo">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+            <!-- adds anchor tags to creat a navigation menu with internal links by using IDs with the same name as each section -->
+            <!-- adds nav tag with a class for the image and anchor tags so I can specify it in CSS -->
+        </nav>
+        <form class="search-form" action="index.html" method="get">
+            <input type="text" name="search" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <!-- adds form tag to create search bar, with placeholder attribute to display the 'search' text inside the bar -->
+    </header>
+    <section id="home">
+        <img src="images/main-banner.jpg" alt="work environment">
+        <div class="welcome">
+            <h1>Welcome to Three Star Media</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae et ut repellat reiciendis similique
+                dolore odio. Magni fugiat explicabo sint tenetur quaerat, aliquam reiciendis consectetur quos velit,
+                repudiandae aperiam ipsa.
+            </p>
+            <button type="button"> Connect with us <i class="fa-solid fa-caret-right"></i></button>
+        </div>
+        <!-- adds div tag with class containing the h1, p and button tags, so I can wrap it inside the background image of the home section -->
+    </section>
+    <section id="about">
+        <img src="images/about-us.jpg" alt="relax work atmosphere">
+        <h2>About Us</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fuga quas porro quia eum sint assumenda
+            reiciendis vel cumque, aperiam omnis itaque alias nemo eveniet! Excepturi eveniet qui autem eaque.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, laborum! Tempora corporis expedita vel,
+            laudantium nemo optio id velit consequatur voluptatum recusandae quos, animi ducimus voluptate voluptatem
+            dignissimos similique! Accusantium!
+        </p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <!-- separetes this section into each service offered by using div tag with class so I can make specific changes in CSS for each of them -->
+        <div class="item-service">
+            <img src="images/digital.jpg" alt="mobile and desktop services">
+            <h3>Digital Transformation</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fuga quas porro quia eum sint assumenda
+                reiciendis vel cumque, aperiam omnis itaque alias nemo eveniet! Excepturi eveniet qui autem eaque.
+            </p>
+            <button type="button">Digital Plans <i class="fa-solid fa-caret-right"></i></button>
+        </div>
+        <div class="item-service">
+            <img src="images/marketing.jpg" alt="graph of analysis on a laptop">
+            <h3>Marketing</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus accusantium iure sit nostrum unde. Hic
+                necessitatibus quos, voluptatibus enim cum dicta eos non magni tempore nostrum! Debitis repellendus
+                fugiat accusantium.
+            </p>
+            <button type="button">Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
+        </div>
+        <div class="item-service">
+            <img src="images/video.jpg" alt="mobile opening youtube app">
+            <h3>Video Production</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat iusto unde minima consequatur maiores
+                architecto nostrum non deleniti soluta quidem corrupti velit rem nam, ipsam at itaque odio. Perferendis,
+                mollitia!
+            </p>
+            <button type="button">Video Plans <i class="fa-solid fa-caret-right"></i></button>
+        </div>
+        <div class="item-service">
+            <img src="images/web.jpg" alt="mobile on top of a notebook">
+            <h3>Web Development</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium inventore aspernatur non. Omnis
+                porro perferendis minima consequatur corporis. Praesentium corporis omnis nam! Fugiat repudiandae sequi
+                corrupti autem tempora nostrum.
+            </p>
+            <button type="button"> Web Plans<i class="fa-solid fa-caret-right"></i></button>
+        </div>
+        <div class="item-service">
+            <img src="images/print.jpg" alt="mailboxes on the street">
+            <h3>Print</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequatur soluta aperiam quasi
+                quidem ut nulla, fugit aliquid sit voluptatum aspernatur quae alias quas vel saepe possimus amet minus
+                tenetur!
+            </p>
+            <button type="button">Print Plans<i class="fa-solid fa-caret-right"></i></button>
+        </div>
+    </section>
+    <section class="vision">
+        <img src="images/vision.jpg" alt="origami boats on a table">
+        <h3>Our Vision</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nemo itaque cumque asperiores, possimus vero
+            molestiae facilis commodi. Natus rerum consectetur recusandae excepturi consequuntur quidem quis dolorem
+            quasi est nemo!
+        </p>
+        <button type="button">Learn More<i class="fa-solid fa-caret-right"></i></button>
+    </section>
+    <section id="team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="images/john.jpg" alt="man portrait">
+            <h3>John Doe</h3>
+            <h4>CEO and Co-owner</h4>
+            <hr>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolor reiciendis amet fugiat
+                exercitationem hic laborum tempora et modi? Iusto quisquam sunt libero quis, dolorem laborum cupiditate
+                omnis ducimus rerum!
+            </p>
+        </div>
+        <div class="team-member">
+            <img src="images/bob.jpg" alt="man portrait">
+            <h3>Bob Rite</h3>
+            <h4>CFO and Co-owner</h4>
+            <hr>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolor reiciendis amet fugiat
+                exercitationem hic laborum tempora et modi? Iusto quisquam sunt libero quis, dolorem laborum cupiditate
+                omnis ducimus rerum!
+            </p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div>
+            <h3>Send us a message</h3>
+            <form action="index.html" method="get">
+                <div>
+                    <label for="fullname">Full Name</label>
+                    <input id="fullname" type="text" name="fullname">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message"></textarea>
+                </div>
+                <button type="submit">Send</button>
             </form>
-        </header>
-        <section id="home">
-            <img src="images/main-banner.jpg" alt="work environment">
-            <div class="welcome">
-                <h1>Welcome to Three Star Media</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae et ut repellat reiciendis similique dolore odio. Magni fugiat explicabo sint tenetur quaerat, aliquam reiciendis consectetur quos velit, repudiandae aperiam ipsa.
-                </p>
-                <button type="button"> Connect with us <i class="fa-solid fa-caret-right"></i></button>
-            </div>
-            <!-- add div tag with class containing the h1, p and button tags, so I can wrap it inside the background image of the home section -->
-        </section>
-        <section id="about">
-            <img src="images/about-us.jpg" alt="relax work atmosphere">
-            <h2>About Us</h2>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fuga quas porro quia eum sint assumenda reiciendis vel cumque, aperiam omnis itaque alias nemo eveniet! Excepturi eveniet qui autem eaque.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. In, laborum! Tempora corporis expedita vel, laudantium nemo optio id velit consequatur voluptatum recusandae quos, animi ducimus voluptate voluptatem dignissimos similique! Accusantium!
-            </p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="digital-transformation">
-                <img src="images/digital.jpg" alt="mobile and desktop services">
-                <h3>Digital Transformation</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fuga quas porro quia eum sint assumenda reiciendis vel cumque, aperiam omnis itaque alias nemo eveniet! Excepturi eveniet qui autem eaque.
-                </p>
-                <button type="button"> Digital Plans <i class="fa-solid fa-caret-right"></i></button>
-            </div>
-            <div class="marketing">
-                <img src="images/marketing.jpg" alt="mobile and desktop services">
-                <h3>Marketing</h3>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus accusantium iure sit nostrum unde. Hic necessitatibus quos, voluptatibus enim cum dicta eos non magni tempore nostrum! Debitis repellendus fugiat accusantium.
-                </p>
-                <button type="button"> Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
-            </div>
-            <div class="video-production">
-                <img src="images/video.jpg" alt="mobile and desktop services">
-                <h3>Video Production</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat iusto unde minima consequatur maiores architecto nostrum non deleniti soluta quidem corrupti velit rem nam, ipsam at itaque odio. Perferendis, mollitia!
-                </p>
-                <button type="button"> Video Plans <i class="fa-solid fa-caret-right"></i></button>
-            </div>
-            <div class="web-development">
-                <img src="images/web.jpg" alt="mobile and desktop services">
-                <h3>Web Development</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium inventore aspernatur non. Omnis porro perferendis minima consequatur corporis. Praesentium corporis omnis nam! Fugiat repudiandae sequi corrupti autem tempora nostrum.
-                </p>
-                <button type="button"> Web Plans<i class="fa-solid fa-caret-right"></i></button>
-            </div>
-            <div class="print">
-                <img src="images/print.jpg" alt="mobile and desktop services">
-                <h3>Print</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequatur soluta aperiam quasi quidem ut nulla, fugit aliquid sit voluptatum aspernatur quae alias quas vel saepe possimus amet minus tenetur!
-                </p>
-                <button type="button"> Print Plans<i class="fa-solid fa-caret-right"></i></button>
-            </div>
-        </section>
-    </div>
+        </div>
+        <div>
+            <h3>Hours of operation</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday-Friday</td>
+                        <td>9 AM - 6 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="location">
+            <h3>Location</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.0231476089025!2d-75.75511010000005!3d45.348344999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce07fde3c9a467%3A0xb368c3f179109015!2sAlgonquin%20College%20Building%20T%2C%20Woodroffe%20Avenue%2C%20Nepean%2C%20ON!5e0!3m2!1spt-BR!2sca!4v1722003107277!5m2!1spt-BR!2sca"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy;Copyright Three Star Media, 2020
+        </p>
+        <p>
+            All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+        </p>
+    </footer>
 </body>
 </html>
