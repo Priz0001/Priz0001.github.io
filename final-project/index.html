@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- add a wrapper to center the content by using a class to the div tag that contains all the content -->
+    
     <header>
         <nav class="nav-menu">
             <img src="images/logo.png" alt="stars logo">
@@ -21,14 +21,14 @@
             <a href="#services">Services</a>
             <a href="#team">Team</a>
             <a href="#contact">Contact</a>
-            <!-- adds anchor tags to creat a navigation menu with internal links by using IDs with the same name as each section -->
-            <!-- adds nav tag with a class for the image and anchor tags so I can specify it in CSS -->
+            <!-- add anchor tags to create a navigation menu with internal links by using IDs that match the names of each section -->
+            <!-- add nav tag with a class for the image and anchor tags so that I can specify it in CSS -->
         </nav>
         <form class="search-form" action="index.html" method="get">
             <input type="text" name="search" placeholder="Search">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-        <!-- adds form tag to create search bar, with placeholder attribute to display the 'search' text inside the bar -->
+        <!-- add form tag to create search bar, with a placeholder attribute to display the 'search' text inside the bar -->
     </header>
     <section id="home">
         <img src="images/main-banner.jpg" alt="work environment">
@@ -41,7 +41,7 @@
             </p>
             <button type="button"> Connect with us <i class="fa-solid fa-caret-right"></i></button>
         </div>
-        <!-- adds div tag with class containing the h1, p and button tags, so I can wrap it inside the background image of the home section -->
+        <!-- add a div tag with class containing the h1, p and button tags, so that I can wrap it inside the background image of the home section -->
     </section>
     <section id="about">
         <img src="images/about-us.jpg" alt="relax work atmosphere">
@@ -58,7 +58,7 @@
     </section>
     <section id="services">
         <h2>Our Services</h2>
-        <!-- separetes this section into each service offered by using div tag with class so I can make specific changes in CSS for each of them -->
+        <!-- separete this section into individual services offered by using div tags for organization, but with the same class so I can change all of them at once in CSS, as it has the same styles -->
         <div class="item-service">
             <img src="images/digital.jpg" alt="mobile and desktop services">
             <h3>Digital Transformation</h3>
@@ -96,7 +96,7 @@
                 porro perferendis minima consequatur corporis. Praesentium corporis omnis nam! Fugiat repudiandae sequi
                 corrupti autem tempora nostrum.
             </p>
-            <button type="button"> Web Plans<i class="fa-solid fa-caret-right"></i></button>
+            <button type="button">Web Plans<i class="fa-solid fa-caret-right"></i></button>
         </div>
         <div class="item-service">
             <img src="images/print.jpg" alt="mailboxes on the street">
@@ -110,6 +110,7 @@
         </div>
     </section>
     <section class="vision">
+        <!-- add a class to this section, as it doesn't have an anchor tag linking to it, so that I can make specific style changes in CSS only for this section -->
         <img src="images/vision.jpg" alt="origami boats on a table">
         <h3>Our Vision</h3>
         <p>
@@ -125,7 +126,8 @@
             <img src="images/john.jpg" alt="man portrait">
             <h3>John Doe</h3>
             <h4>CEO and Co-owner</h4>
-            <hr>
+            <div></div>
+            <!-- add div tag so that I can create a top border in CSS for styling -->
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolor reiciendis amet fugiat
                 exercitationem hic laborum tempora et modi? Iusto quisquam sunt libero quis, dolorem laborum cupiditate
@@ -136,7 +138,7 @@
             <img src="images/bob.jpg" alt="man portrait">
             <h3>Bob Rite</h3>
             <h4>CFO and Co-owner</h4>
-            <hr>
+            <div></div>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolor reiciendis amet fugiat
                 exercitationem hic laborum tempora et modi? Iusto quisquam sunt libero quis, dolorem laborum cupiditate
@@ -156,10 +158,12 @@
                 <div>
                     <label for="email">Email</label>
                     <input id="email" type="email" name="email">
+                    <!-- add 'type=email' attribute, so that the text box only accepts email addresses -->
                 </div>
                 <div>
                     <label for="message">Message</label>
                     <textarea id="message"></textarea>
+                    <!-- add textarea tag to enlarge the text area to accommodate more than one line -->
                 </div>
                 <button type="submit">Send</button>
             </form>
@@ -169,11 +173,13 @@
             <table>
                 <thead>
                     <tr>
+                        <!-- add tr tags inside the thead tag to create the two table row headings -->
                         <th>Days</th>
                         <th>Hours</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- add tr tag for each row of the table content -->
                     <tr>
                         <td>Monday-Friday</td>
                         <td>9 AM - 6 PM</td>
@@ -191,6 +197,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.0231476089025!2d-75.75511010000005!3d45.348344999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce07fde3c9a467%3A0xb368c3f179109015!2sAlgonquin%20College%20Building%20T%2C%20Woodroffe%20Avenue%2C%20Nepean%2C%20ON!5e0!3m2!1spt-BR!2sca!4v1722003107277!5m2!1spt-BR!2sca"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- use an iframe tag to add a map -->
         </div>
     </section>
     <footer>
@@ -199,6 +206,7 @@
         </p>
         <p>
             All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+            <!-- use an anchor tag to link the word 'Unsplash' to its website -->
         </p>
     </footer>
 </body>
