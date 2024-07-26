@@ -4,9 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>priz0001 final project</title>
+
+    <script src="https://kit.fontawesome.com/324425761b.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+    <div class="content">
+    <!-- add a wrapper to center the content by using a class to the div tag that contains all the content -->
+        <header>
+            <nav>
+                <img src="images/logo.png" alt="stars logo">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+                <!-- add anchor tags to creat internal links by using IDs with the same name as each section -->
+            </nav>
+            <form class="form-container" action="index.html" method="get">
+                <input type="text" name="search"  placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </header>
+        <section id="home">
+            <img src="images/main-banner.jpg" alt="work environment">
+            <div class="welcome">
+                <h1>Welcome to Three Star Media</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae et ut repellat reiciendis similique dolore odio. Magni fugiat explicabo sint tenetur quaerat, aliquam reiciendis consectetur quos velit, repudiandae aperiam ipsa.
+                </p>
+                <button type="button"> Connect with us <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <!-- add div tag with class containing the h1, p and button tags, so I can wrap it inside the background image of the home section -->
+        </section>
+        <section id="about">
+            <img src="images/about-us.jpg" alt="relax work atmosphere">
+            <h2>About Us</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fuga quas porro quia eum sint assumenda reiciendis vel cumque, aperiam omnis itaque alias nemo eveniet! Excepturi eveniet qui autem eaque.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In, laborum! Tempora corporis expedita vel, laudantium nemo optio id velit consequatur voluptatum recusandae quos, animi ducimus voluptate voluptatem dignissimos similique! Accusantium!
+            </p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="digital-transformation">
+                <img src="images/digital.jpg" alt="mobile and desktop services">
+                <h3>Digital Transformation</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fuga quas porro quia eum sint assumenda reiciendis vel cumque, aperiam omnis itaque alias nemo eveniet! Excepturi eveniet qui autem eaque.
+                </p>
+                <button type="button"> Digital Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <div class="marketing">
+                <img src="images/marketing.jpg" alt="mobile and desktop services">
+                <h3>Marketing</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus accusantium iure sit nostrum unde. Hic necessitatibus quos, voluptatibus enim cum dicta eos non magni tempore nostrum! Debitis repellendus fugiat accusantium.
+                </p>
+                <button type="button"> Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <div class="video-production">
+                <img src="images/video.jpg" alt="mobile and desktop services">
+                <h3>Video Production</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat iusto unde minima consequatur maiores architecto nostrum non deleniti soluta quidem corrupti velit rem nam, ipsam at itaque odio. Perferendis, mollitia!
+                </p>
+                <button type="button"> Video Plans <i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <div class="web-development">
+                <img src="images/web.jpg" alt="mobile and desktop services">
+                <h3>Web Development</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium inventore aspernatur non. Omnis porro perferendis minima consequatur corporis. Praesentium corporis omnis nam! Fugiat repudiandae sequi corrupti autem tempora nostrum.
+                </p>
+                <button type="button"> Web Plans<i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <div class="print">
+                <img src="images/print.jpg" alt="mobile and desktop services">
+                <h3>Print</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequatur soluta aperiam quasi quidem ut nulla, fugit aliquid sit voluptatum aspernatur quae alias quas vel saepe possimus amet minus tenetur!
+                </p>
+                <button type="button"> Print Plans<i class="fa-solid fa-caret-right"></i></button>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
