@@ -1,0 +1,465 @@
+body {
+    font-family: open sans; 
+    max-width: 1200px;
+    /* add a max-width to the entire page so the content stops expanding on screens wider than 1200px */
+    margin: 0 auto;  
+}
+
+header {
+    padding: 10px;
+    background-color: #222;
+}
+
+.logo-wrapper {
+    background-color: #c78c06;
+    /* add a background to the full width of the logo by selecting the class of the div that contains the img as a child */
+}
+
+.nav-menu a {
+    display: flex;
+    flex-direction: column;
+    color: #c78c06;
+    text-decoration: none;
+    padding: 20px 40px;
+    text-align: center;
+    /* use display flex so I can change the menu bar's position from horizontal to vertical using the flex-direction property, and also center the menu with the text-align property */
+}
+
+.nav-menu a:hover {
+    color:#222;
+    background-color: #c78c06;
+    /* use hover selector inside the menu bar so that when you hover the mouse over each section of the menu, the style changes */
+}
+
+.search-form {
+    display: flex;
+    /* uses display flex so the entire form (input and button) fits inside a flex container. This will allow me to style the input and button separately */
+    
+}
+
+.search-form input {
+    width: 100%;
+    font-size: 1rem;
+    /* adds width of 100% to the input so the search box covers all the available space inside the flexbox */
+}
+
+.search-form button {
+    background-color: #222;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+img {
+    width: 100%;
+    /* add a width of 100% to ensure that all images on the page fit perfectly within their respective div containers */
+}
+
+.logo-wrapper img {
+    width: auto;
+    /* add a width auto to the logo so that the 'width:100%' set above for the other images doesn't affect the logo image  */
+}
+
+.welcome-container {
+    background-image: url(../images/main-banner.jpg);
+    /* add an image as the backgound of the home section */
+    background-size: 780px;
+    background-repeat: no-repeat;
+    height: 580px;
+    display: flex;
+}
+
+.welcome-wrapper {
+    background-color: #222222ca;
+    width: 100%;
+    margin: auto 0;
+}
+
+.welcome-wrapper h1 {
+    font-size: 4rem;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+    /* set line-height to 1.5 to increase the space between the lines of the heading*/
+}
+
+p {
+    line-height: 1.5;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.welcome-wrapper p {
+    color: #fff;
+    margin: 10px;
+    font-weight: 400;
+    /* set a lower font-weight specifically to the p tag of the home section */
+}
+
+.button {
+    margin: 0 0 10px 10px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    /* use display flex to center all the elements of the button by using justify-content (horizontal centering) and align-items (vertical centering)*/
+    /* set text-decoration to none to remove the default style of all anchor tags with button class*/
+    /* set font-weight to 400 to adjust the font thickness */
+}
+
+.fa-caret-right {
+    padding-left: 10px;
+    font-size: 2rem;
+    /* change only the arrow icon inside the button by increasing its size and adding some space between it and the button text */
+}
+
+.button-orange {
+    background-color: #c78c06;
+    color: #222;
+    font-weight: 500;
+    width: 180px;
+}
+
+#about {
+    padding: 10px;
+    background-color: #ffe6ac;
+    margin-bottom: 20px;
+    /* add a 10px padding to create some space between the background and the content */
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+    /* apply the same style to all h2 tags of the page */
+
+}
+
+#about p {
+    margin-bottom: 10px;
+    /* add a margin-bottom to the paragraphs to create space between them */
+}
+
+#services h2 {
+    margin-left: 10px;
+}
+
+.item-service {
+    background-color: #ffe6ac;
+    margin: 10px;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 750;
+    /* change the size and thickness of all h3 tags of the page */
+}
+
+.item-service h3 {
+    margin: 0 10px 0 10px;
+    padding: 20px 0 20px 0;
+}
+
+.item-service p {
+    margin: 0 10px 10px 10px;
+}
+
+.button-black {    
+    background-color: #222;
+    color: #fff;
+    width: 180px;
+}
+
+.vision-container {
+    background-image: url(../images/vision.jpg);
+    background-size: 760px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    /* use the background-size, background-position and height properties to position background image correctly */
+    /* use display flex to center the content inside the image */
+}
+
+.vision-wrapper {
+    width: 100%;
+    margin: auto 0;
+}
+
+.vision h3 {
+    margin-left: 10px;
+    padding: 20px 0 20px 0;
+    color: #fff;
+}
+
+.vision p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.button-orange-border {
+    background-color: #222222ca;
+    color: #fff;
+    border: solid 1px #c78c06;
+    width: 180px;
+}
+
+#team {
+    margin: 40px 10px 60px 10px;
+}
+
+.team-member {
+    background-color:#ffe6ac;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    margin: 20px 0 10px 10px;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.separator {
+    border-bottom: solid 2px #c78c06;
+    margin: 5px 10px 10px 10px;
+    /* add a border-bottom to style the separator div */
+}
+
+.team-member p {
+    margin: 0 10px 0 10px;
+    padding-bottom: 20px;
+}
+
+#contact {
+    margin: 10px;
+}
+
+#contact h3 {
+    margin: 20px 0 20px 0;
+}
+
+#fullname, #email {
+    display: block;
+    width: 100%;
+    margin: 10px 20px 10px 0;
+}
+
+#message {
+    display: block;
+    height: 150px;
+    width: 100%;
+    margin: 10px 20px 10px 0;
+}
+
+#contact button {
+    background-color: #222;
+    color: #c78c06;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+input, textarea {
+    box-sizing: border-box;
+    /* add a box-sizing to fix the form's boxes size, so it accounts the margin correctly in the input and textarea */
+}
+
+table {
+    width: 100%;
+    /* add a width to the entire table so its content fills all the remaning width */
+}
+
+th, td {
+    border: 1px solid #222;
+    padding: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+th {
+    background-color: #ffe6ac;
+}
+
+footer {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    background-color: #222;
+    color:#c78c06;
+}
+
+footer p {
+    color:#c78c06;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+footer a:visited {
+    color:white;
+    /* when the website has already been visited, changes the color of the link to white to provide more contrast */
+}
+
+iframe {
+    width: 100%;
+    border: 0;
+    height: 350px;
+    /* when embedding the link from google maps and placing it in HTML, it came with an inline style (width="600" height="450" style="border:0;"). Because of the width of 600px, a mobile screen with width less than 600px display an empty white space along the borders of the page. To fix that, I removed the inline style from the HTML and applied my desired style in CSS */
+}
+
+@media screen and (min-width: 760px) {
+    /* add a media query to adjust the style of the page for screens of 760px and wider */
+    .nav-menu {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: center;
+        /* change the nav bar to row layout by using flexbox and center the content by using justify-content for the main axis (horizontal) and align-items for the cross-axis (vertical)  */
+    }
+
+    header {
+        padding: 20px 10px 20px 10px;
+    }
+
+    .nav-menu a {
+        padding: 20px 20px;
+    }
+
+    .welcome-container {
+        background-size: 1200px;
+        background-position: center;
+        height: 470px;
+        width: auto;
+    }
+
+    .welcome-wrapper {
+        margin: 40px 60px 40px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    #about {
+        padding: 10px 60px 10px 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* use display flew with row direction so the child elements (about-img and about-content) are placed next each other */
+    }
+
+    .about-img, .about-content {
+        flex-basis: calc(50% - 10px);
+        /* use flex-basis with calc() to place the child elements on each half of the container, accounting the padding  */
+    }
+
+    #services {
+        margin: 20px 60px 20px 60px;
+    }
+
+    .service-one {
+        grid-area: s1
+    }
+
+    .service-two {
+        grid-area: s2
+    }
+
+    .service-three {
+        grid-area: s3
+    }
+
+    .service-four {
+        grid-area: s4
+    }
+
+    .service-five {
+        grid-area: s5
+    }
+
+    .grid-service {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "s1 s1 s1 s2 s2 s2"
+        "s3 s3 s4 s4 s5 s5"
+        /* add a unique grid-area name for each of the service items and with the display grid, creates 6 columns and 2 rows, then place each item in the grid according to its grid-area name */
+    }
+
+    .item-service {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* apply flexbox to each of the service items so that the elements inside them are spaced evenly */
+    }
+
+    .button-black {
+        margin-right: 10px;
+        width: auto;
+    }
+    
+    #team {
+        margin: 20px 60px 20px 60px;
+    }
+
+    .team-member {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .team-one-img, .team-two-img, .team-one-content, .team-two-content {
+        width: 50%;
+    }
+
+    .team-two-img {
+        order: 1
+        /* change the order of the image to 1 so it will be placed after the team-two-content tag, as by default all elements in a flexbox have an order of 0 */
+    }
+
+    .member-image {
+        display: block;
+    }
+
+    .vision-container {
+        background-size: 1200px;
+        /* change the background size to 1200px so the image inside the vision-container tag will expand to fill the maximun screen width of the page */
+    }
+
+    #contact {
+        margin: 20px 60px 20px 60px;
+    }
+
+    .message {
+        grid-area: c1;
+        margin-right: 5px;
+    }
+
+    .operation-time {
+        grid-area: c2;
+    }
+
+    .location {
+        grid-area: c3;
+        margin-left: 5px;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "c1 c3"
+        "c2 c2"
+    }
+}

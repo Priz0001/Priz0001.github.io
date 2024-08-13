@@ -10,179 +10,207 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap"
+        rel="stylesheet">
 
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    
+
     <header>
         <nav class="nav-menu">
-            <img src="images/logo.png" alt="stars logo">
+            <div class="logo-wrapper">
+                <img src="images/logo.png" alt="stars logo">
+                <!-- /* use a div with a class to wrap the logo so I can add a background to the full width with CSS*/ -->
+            </div>
             <a href="#home">Home</a>
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
             <a href="#team">Team</a>
             <a href="#contact">Contact</a>
             <!-- add anchor tags to create a navigation menu with internal links by using IDs that match the names of each section -->
-            <!-- add nav tag with a class for the image and anchor tags so that I can specify it in CSS -->
+            <form class="search-form" action="index.html" method="get">
+                <input type="text" name="search" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <!-- add form tag to create search bar, with a placeholder attribute to display the 'search' text inside the bar -->
         </nav>
-        <form class="search-form" action="index.html" method="get">
-            <input type="text" name="search" placeholder="Search">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-        <!-- add form tag to create search bar, with a placeholder attribute to display the 'search' text inside the bar -->
+        <!-- add nav tag with a class for the image, anchor and form tags so that I can style them with CSS -->
     </header>
     <section id="home">
-        <img src="images/main-banner.jpg" alt="work environment">
-        <div class="welcome">
-            <h1>Welcome to Three Star Media</h1>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae et ut repellat reiciendis similique
-                dolore odio. Magni fugiat explicabo sint tenetur quaerat, aliquam reiciendis consectetur quos velit,
-                repudiandae aperiam ipsa.
-            </p>
-            <a href="#" class="button button-orange"> Connect with us <i class="fa-solid fa-caret-right"></i></a>
+        <div class="welcome-container">
+            <div class="welcome-wrapper">
+                <h1>Welcome to Three Star Media</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae et ut repellat reiciendis similique
+                    dolore odio. Magni fugiat explicabo sint tenetur quaerat, aliquam reiciendis consectetur quos velit,
+                    repudiandae aperiam ipsa.
+                </p>
+                <a href="#" class="button button-orange"> Connect with us<i class="fa-solid fa-caret-right"></i></a>
+            </div>
         </div>
         <!-- add a div tag with class containing the h1, p and a tags, so that I can wrap it inside the background image of the home section -->
     </section>
     <section id="about">
-        <img src="images/about-us.jpg" alt="relax work atmosphere">
-        <h2>About Us</h2>
-        <p>
+        <div class="about-img">
+            <img src="images/about-us.jpg" alt="relax work atmosphere">
+        </div>
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fuga quas porro quia eum sint assumenda
             reiciendis vel cumque, aperiam omnis itaque alias nemo eveniet! Excepturi eveniet qui autem eaque.
-        </p>
-        <p>
+            </p>
+            <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In, laborum! Tempora corporis expedita vel,
             laudantium nemo optio id velit consequatur voluptatum recusandae quos, animi ducimus voluptate voluptatem
             dignissimos similique! Accusantium!
-        </p>
+            </p>
+        </div>
     </section>
     <section id="services">
         <h2>Our Services</h2>
-        <!-- separete this section into individual services offered by using div tags for organization, but with the same class so I can change all of them at once in CSS, as it has the same styles -->
-        <div class="item-service">
-            <img src="images/digital.jpg" alt="mobile and desktop services">
-            <h3>Digital Transformation</h3>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fuga quas porro quia eum sint assumenda
-                reiciendis vel cumque, aperiam omnis itaque alias nemo eveniet! Excepturi eveniet qui autem eaque.
-            </p>
-            <a href="#" class="button button-black">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
-        </div>
-        <div class="item-service">
-            <img src="images/marketing.jpg" alt="graph of analysis on a laptop">
-            <h3>Marketing</h3>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus accusantium iure sit nostrum unde. Hic
-                necessitatibus quos, voluptatibus enim cum dicta eos non magni tempore nostrum! Debitis repellendus
-                fugiat accusantium.
-            </p>
-            <a href="#" class="button button-black">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
-        </div>
-        <div class="item-service">
-            <img src="images/video.jpg" alt="mobile opening youtube app">
-            <h3>Video Production</h3>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat iusto unde minima consequatur maiores
-                architecto nostrum non deleniti soluta quidem corrupti velit rem nam, ipsam at itaque odio. Perferendis,
-                mollitia!
-            </p>
-            <a href="#" class="button button-black">Video Plans <i class="fa-solid fa-caret-right"></i></a>
-        </div>
-        <div class="item-service">
-            <img src="images/web.jpg" alt="mobile on top of a notebook">
-            <h3>Web Development</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium inventore aspernatur non. Omnis
-                porro perferendis minima consequatur corporis. Praesentium corporis omnis nam! Fugiat repudiandae sequi
-                corrupti autem tempora nostrum.
-            </p>
-            <a href="#" class="button button-black">Web Plans<i class="fa-solid fa-caret-right"></i></a>
-        </div>
-        <div class="item-service">
-            <img src="images/print.jpg" alt="mailboxes on the street">
-            <h3>Print</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequatur soluta aperiam quasi
-                quidem ut nulla, fugit aliquid sit voluptatum aspernatur quae alias quas vel saepe possimus amet minus
-                tenetur!
-            </p>
-            <a href="#" class="button button-black">Print Plans<i class="fa-solid fa-caret-right"></i></a>
+        <!-- separete this section into individual services offered by using div tags for organization, but with the same class so I can style all of them at once in CSS, as they have the same styles -->
+        <div class="grid-service">
+            <div class="item-service service-one">
+                <!-- add a grid-service class to a div that contains all the services, and a specific grid class of each service div, so I can use grid properties in CSS -->
+                <img src="images/digital.jpg" alt="mobile and desktop services">
+                <h3>Digital Transformation</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad fuga quas porro quia eum sint assumenda
+                    reiciendis vel cumque, aperiam omnis itaque alias nemo eveniet! Excepturi eveniet qui autem eaque.
+                </p>
+                <a href="#" class="button button-black">Digital Plans<i class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="item-service service-two">
+                <img src="images/marketing.jpg" alt="graph of analysis on a laptop">
+                <h3>Marketing</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus accusantium iure sit nostrum unde. Hic
+                    necessitatibus quos, voluptatibus enim cum dicta eos non magni tempore nostrum! Debitis repellendus
+                    fugiat accusantium.
+                </p>
+                <a href="#" class="button button-black">Marketing Plans<i class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="item-service service-three">
+                <img src="images/video.jpg" alt="mobile opening youtube app">
+                <h3>Video Production</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat iusto unde minima consequatur maiores
+                    architecto nostrum non deleniti soluta quidem corrupti velit rem nam, ipsam at itaque odio. Perferendis,
+                    mollitia!
+                </p>
+                <a href="#" class="button button-black">Video Plans<i class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="item-service service-four">
+                <img src="images/web.jpg" alt="mobile on top of a notebook">
+                <h3>Web Development</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium inventore aspernatur non. Omnis
+                    porro perferendis minima consequatur corporis. Praesentium corporis omnis nam!
+                </p>
+                <a href="#" class="button button-black">Web Plans<i class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="item-service service-five">
+                <img src="images/print.jpg" alt="mailboxes on the street">
+                <h3>Print</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequatur soluta aperiam quasi
+                    quidem ut nulla, fugit aliquid sit voluptatum aspernatur quae alias quas vel saepe possimus amet minus
+                    tenetur!
+                </p>
+                <a href="#" class="button button-black">Print Plans<i class="fa-solid fa-caret-right"></i></a>
+            </div>
         </div>
     </section>
     <section class="vision">
         <!-- add a class to this section, as it doesn't have an anchor tag linking to it, so that I can make specific style changes in CSS only for this section -->
-        <img src="images/vision.jpg" alt="origami boats on a table">
-        <h3>Our Vision</h3>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nemo itaque cumque asperiores, possimus vero
-            molestiae facilis commodi. Natus rerum consectetur recusandae excepturi consequuntur quidem quis dolorem
-            quasi est nemo!
-        </p>
-        <a href="#" class="button button-orange-border">Learn More<i class="fa-solid fa-caret-right"></i></a>
+        <div class="vision-container">
+            <div class="vision-wrapper">
+                <h3>Our Vision</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque nemo itaque cumque asperiores,
+                    possimus vero
+                    molestiae facilis commodi. Natus rerum consectetur recusandae excepturi consequuntur quidem quis
+                    dolorem
+                    quasi est nemo!
+                </p>
+                <a href="#" class="button button-orange-border">Learn More<i class="fa-solid fa-caret-right"></i></a>
+            </div>
+        </div>
     </section>
     <section id="team">
         <h2>Our Team</h2>
-        <div class="team-member">
-            <img src="images/john.jpg" alt="man portrait">
-            <h3>John Doe</h3>
-            <h4>CEO and Co-owner</h4>
-            <div class="separetor"></div>
-            <!-- add div tag so that I can create a top border in CSS for styling -->
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolor reiciendis amet fugiat
-                exercitationem hic laborum tempora et modi? Iusto quisquam sunt libero quis, dolorem laborum cupiditate
-                omnis ducimus rerum!
-            </p>
-        </div>
-        <div class="team-member">
-            <img src="images/bob.jpg" alt="man portrait">
-            <h3>Bob Rite</h3>
-            <h4>CFO and Co-owner</h4>
-            <div class="separetor"></div>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolor reiciendis amet fugiat
-                exercitationem hic laborum tempora et modi? Iusto quisquam sunt libero quis, dolorem laborum cupiditate
-                omnis ducimus rerum!
-            </p>
+        <div class="team">
+            <!-- add a div with class that contains all the elements, so I can add a margin to it in CSS -->
+            <div class="team-member">
+                <!-- separate each member into different div tags with the same class so I can apply flexbox in CSS -->
+                <div class="team-one-img">
+                    <img class="member-image" src="images/john.jpg" alt="man portrait">
+                </div>
+                <div class="team-one-content">
+                    <h3>John Doe</h3>
+                    <h4>CEO and Co-owner</h4>
+                    <div class="separator"></div>
+                    <!-- add div tag so that I can create a top border in CSS for styling -->
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolor reiciendis amet fugiat
+                        exercitationem hic laborum tempora et modi? Iusto quisquam sunt libero quis, dolorem laborum cupiditate
+                        omnis ducimus rerum!
+                    </p>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="team-two-img">
+                    <img class="member-image" src="images/bob.jpg" alt="man portrait">
+                </div>
+               <div class="team-two-content">
+                    <h3>Bob Rite</h3>
+                    <h4>CFO and Co-owner</h4>
+                    <div class="separator"></div>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, dolor reiciendis amet fugiat
+                        exercitationem hic laborum tempora et modi? Iusto quisquam sunt libero quis, dolorem laborum cupiditate
+                        omnis ducimus rerum!
+                    </p>
+               </div>
+            </div>
         </div>
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
-        <div>
-            <h3>Send us a message</h3>
-            <form action="index.html" method="get">
-                <div>
-                    <label for="fullname">Full Name</label>
-                    <input id="fullname" type="text" name="fullname">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="email">
-                    <!-- add 'type=email' attribute, so that the text box only accepts email addresses -->
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message"></textarea>
-                    <!-- add textarea tag to enlarge the text area to accommodate more than one line -->
-                </div>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <div>
-            <h3>Hours of operation</h3>
-            <table>
-                <thead>
+        <div class="contact-wrapper">
+            <div class="message">
+                <h3>Send us a message</h3>
+                <form action="index.html" method="get">
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" type="text" name="fullname">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email">
+                        <!-- add 'type=email' attribute, so that the text box only accepts email addresses -->
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message"></textarea>
+                        <!-- add textarea tag to enlarge the text area to accommodate more than one line -->
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="operation-time">
+                <h3>Hours of operation</h3>
+                <table>
                     <tr>
                         <!-- add tr tags inside the thead tag to create the two table row headings -->
                         <th>Days</th>
                         <th>Hours</th>
                     </tr>
-                </thead>
-                <tbody>
                     <!-- add tr tag for each row of the table content -->
                     <tr>
                         <td>Monday-Friday</td>
@@ -192,16 +220,16 @@
                         <td>Saturday - Sunday</td>
                         <td>Closed</td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="location">
-            <h3>Location</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.0231476089025!2d-75.75511010000005!3d45.348344999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce07fde3c9a467%3A0xb368c3f179109015!2sAlgonquin%20College%20Building%20T%2C%20Woodroffe%20Avenue%2C%20Nepean%2C%20ON!5e0!3m2!1spt-BR!2sca!4v1722003107277!5m2!1spt-BR!2sca"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </table>
+            </div>
+            <div class="location">
+                <h3>Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.0231476089025!2d-75.75511010000005!3d45.348344999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce07fde3c9a467%3A0xb368c3f179109015!2sAlgonquin%20College%20Building%20T%2C%20Woodroffe%20Avenue%2C%20Nepean%2C%20ON!5e0!3m2!1spt-BR!2sca!4v1722003107277!5m2!1spt-BR!2sca"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <!-- use an iframe tag to add a map -->
+            </div>
         </div>
     </section>
     <footer>
@@ -214,4 +242,5 @@
         </p>
     </footer>
 </body>
+
 </html>
